@@ -13,21 +13,22 @@
         body {
             font-family: Arial, sans-serif;
             background-color: white;
-            border: 10px solid green; /* alterado para fazer a borda ser uma linha contínua */
+            border: 20px solid green;
         }
 
         .header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space;
             background-color: green;
             padding: 10px;
         }
 
         .logo {
-            font-size: 64px;
+            font-size: 100px;
             font-weight: bold;
             color: #26ff00;
+            border-radius: 30px; 
         }
 
         .menu {
@@ -43,13 +44,12 @@
             color: white;
             text-decoration: none;
         }
-
         .content {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             padding: 20px;
-            overflow-y: auto; /* adicionado para fazer a rolagem da página de produtos */
+            overflow-y: auto;
         }
         .content {
             display: flex;
@@ -58,20 +58,20 @@
             padding: 20px;
             overflow-y: auto; 
             margin-top: 35px; 
-            height: calc(100vh - 140px); /* adicionado para limitar a altura do conteúdo */
+            height: calc(100vh - 140px);
         }
         .product {
             display: flex;
             align-items: center;
             border: 1px solid green;
-            border-radius: 10px; 
+            border-radius: 30px; 
             padding: 10px;
-            width: 80%;
+            width: 100%;
         }
 
         .product img {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
         }
 
         .product-info {
@@ -79,22 +79,26 @@
         }
 
         .product-name {
-            font-size: 20px;
+            font-size: 30px;
             font-weight: bold;
         }
 
         .product-price {
             color: green;
+            font-size: 25px;
         }
 
         .product-button {
             display: block;
             background-color: green;
             color: white;
-            padding: 5px 10px;
+            padding: 15px 30px;
             margin-top: 10px;
+            border-radius: 30px; 
             text-align: center;
             text-decoration: none;
+            width: 600px
+         
         }
 
         .footer { 
