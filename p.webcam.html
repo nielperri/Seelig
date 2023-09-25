@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Produto</title>
+    <style>
+        /* Estilos CSS */
+        * { /* adicionado para fazer a página ocupar toda a tela */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            border: 20px solid green;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;                                                 
+            display: flex;
+            align-items: center;
+            justify-content: space;
+            background-color: green;
+            padding: 10px;
+        }
+
+        .logo {
+            font-size: 10px;
+            font-weight: bold;
+            color: #26ff00;
+            border-radius: 30px; 
+            }
+
+        .menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu li {
+            margin: 10px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 20px;
+            overflow-y: auto; 
+            margin-top: 35px; 
+            height: calc(100vh - 140px);
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            border: 1px solid green;
+            border-radius: 30px; 
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .product-info {
+            margin-left: 10px;
+        }
+
+        .product-name {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: green;
+            font-size: 25px;
+        }
+
+        .product-button {
+            display: block;
+            background-color: green;
+            color: white;
+            padding: 30px 60px;
+            margin-top: 20px;
+            border-radius: 60px; 
+            text-align: center;
+            text-decoration: none;
+            width: 800px
+            font-size: 200px
+        }
+
+        .footer { 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: green;
+            padding: 10px;            
+        }
+
+        .footer-logo { 
+            font-size: 24px;
+            font-weight: bold;
+            color: white;            
+        }
+
+        .footer-menu { 
+           display:flex; 
+           list-style:none;           
+        }
+
+        .footer-menu li { 
+           margin-left :10px;           
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 13%;
+        }
+
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-image {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-title {
+            font-size: 70px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 70px;
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .product-specs {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .product-specs h2 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .product-specs ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .product-specs li {
+            margin-bottom: 5px;
+        }
+
+        .related-products {
+            margin-top: 20px;
+        }
+
+        .related-products h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .related-product {
+            flex-basis: calc(50% - 20px);
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .related-product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .related-product-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .related-product-price {
+            font-size: 16px;
+            color: green;
+        }
+        .ref {
+            text-decoration: underline;  color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        </div>
+    <div class="container">
+        <div class="product-details">
+            <img src="webcam.jpg" alt="Webcam Logitech C920 HD Pro" class="product-image">
+            <div class="product-info">
+                <h1 class="product-title">Webcam Logitech C920 HD Pro</h1>
+                <p class="product-price">R$ 399,00</p>
+             <div>
+               <a href="#" class="product-button">Comprar</a>
+           </div>
+                <p class="product-description">
+                    A Webcam Logitech C920 HD Pro é uma câmera web de alta qualidade projetada para capturar vídeos e imagens nítidos em alta definição. Ela é ideal para videoconferências, streaming de vídeo e gravação de conteúdo. Esta webcam oferece qualidade de vídeo Full HD 1080p a 30 quadros por segundo, com correção automática de luz para melhor desempenho em diferentes condições de iluminação. Ela possui dois microfones estéreo integrados para captura de áudio de qualidade e é compatível com uma variedade de aplicativos de comunicação.
+                </p>
+                <div class="product-specs">
+                    <h2>Ficha Técnica</h2>
+                    <ul>
+                         <li><strong>Resolução de Vídeo:</strong> Full HD 1080p (1920 x 1080 pixels)</li>
+    <li><strong>Frame Rate:</strong> 30 quadros por segundo</li>
+    <li><strong>Microfones Integrados:</strong> Dois microfones estéreo</li>
+    <li><strong>Conectividade:</strong> USB 2.0</li>
+    <li><strong>Compatibilidade:</strong> Windows, macOS, Chrome OS</li>
+    <li><strong>Clip Universal:</strong> Pode ser preso em laptops e monitores</li>
+    <li><strong>Ângulo de Visão:</strong> 78 graus</li>
+    <li><strong>Correção Automática de Luz:</strong> Sim</li>
+    <li><strong>Dimensões:</strong> 1,14 x 3,7 x 0,94 polegadas (L x A x P)</li>
+    <li><strong>Peso:</strong> 5,71 onças</li>
+                        <!-- Adicione mais especificações conforme necessário -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+                 <div class="related-products">
+            <h2>Produtos Relacionados</h2>
+            <div class="product-grid">
+                <div class="related-product">
+                   <a href="p.teclado.html" class="ref"><img src="teclado.jpg" alt="Teclado Microsoft Sculpt Ergonomic" class="related-product-image"></a>
+                    <h3 class="related-product-title">Teclado Microsoft Sculpt Ergonomic</h3>
+                    <p class="related-product-price">R$ 499,00</p>
+                </div>
+                <div class="related-product">
+                   <a href="p.monitor.html" class="ref"><img src="monitor.jpg" alt="Monitor LG UltraWide" class="related-product-image"></a>
+                    <h3 class="related-product-title">Monitor LG UltraWide</h3>
+                    <p class="related-product-price">R$ 1.999,00</p>
+                </div>
+                  <div class="related-products">
+            <h2>Produtos Relacionados</h2>
+            <div class="product-grid">
+                <div class="related-product">
+                    <a href="p.fone.html" class="ref"><img src="fone.jpg" alt="Fone de ouvido Sony WH-1000XM4" class="related-product-image"></a>
+                    <h3 class="related-product-title">Fone de ouvido Sony WH-1000XM4</h3>
+                    <p class="related-product-price">R$ 99,00</p>
+                </div>
+                <div class="related-product">
+                    <a href="p.s21.html" class="ref"><img src="smartphone.jpg" alt="Smartphone Samsung Galaxy S21" class="related-product-image"></a>
+                    <h3 class="related-product-title">Smartphone Samsung Galaxy S21</h3>
+                    <p class="related-product-price">R$ 2.499,00</p>
+                </div>
+                  <div class="related-products">
+            <h2>Produtos Relacionados</h2>
+            <div class="product-grid">
+                <div class="related-product">
+                    <a href="p.roteador.html" class="ref"><img src="roteador.jpg" alt="Roteador TP-Link Archer C6 AC1200" class="related-product-image"></a>
+                    <h3 class="related-product-title">Roteador TP-Link Archer C6 AC1200</h3>
+                    <p class="related-product-price">R$ 149,00</p>
+                </div>
+                <div class="related-product">
+                    <a href="p.hd.html" class="ref"><img src="hd.jpg" alt="HD externo Seagate Expansion 2TB" class="related-product-image"></a>
+                    <h3 class="related-product-title">HD externo Seagate Expansion </h3>
+                    <p class="related-product-price">R$ 98,00</p>
+                </div>
+                  <div class="related-products">
+            <h2>Produtos Relacionados</h2>
+            <div class="product-grid">
+                <div class="related-product">
+                    <a href="p.caixa.html" class="ref"><img src="caixa.jpg" alt="Caixa de som JBL Flip" class="related-product-image"></a>
+                    <h3 class="related-product-title">Caixa de som JBL Flip5</h3>
+                    <p class="related-product-price">R$ 299,00</p>
+                </div>
+                <div class="related-product">
+                    <a href="p.laptop.html" class="ref"><img src="laptop.jpg" alt="Laptop Dell Inspiron" class="related-product-image"></a>
+                    <h3 class="related-product-title">Laptop Dell Inspiron</h3>
+                    <p class="related-product-price">R$ 1.800,00</p>
+                </div>
+        <div class="related-products">
+            <h2>Produtos Relacionados</h2>
+            <div class="product-grid">
+                <div class="related-product">
+                    <a href="p.webcam.html" class="ref"><img src="webcam.jpg" alt="Webcam Logitech C920 HD Pro" class="related-product-image"></a>
+                    <h3 class="related-product-title">Webcam Logitech C920 HD Pro</h3>
+                    <p class="related-product-price">R$ 200,00</p>
+                </div>
+                
+                <!-- Adicione mais produtos relacionados conforme necessário -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
