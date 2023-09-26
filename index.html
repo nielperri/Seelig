@@ -2,131 +2,18 @@
  <html lang="pt"> 
  <head> 
      <meta charset="UTF-8"> 
-     <style> 
-         * { /* adicionado para fazer a página ocupar toda a tela */ 
-             margin: 0; 
-             padding: 0; 
-             box-sizing: border-box; 
-         } 
-  
-         body { 
-             font-family: Arial, sans-serif; 
-             background-color: white; 
-             border: 20px solid green; 
-         } 
-  
-         .header { 
-             display: flex; 
-             align-items: center; 
-             justify-content: space; 
-             background-color: green; 
-             padding: 10px; 
-         } 
-  
-         .logo { 
-             font-size: 100px; 
-             font-weight: bold; 
-             color: #26ff00; 
-             border-radius: 30px;  
-         } 
-  
-         .menu { 
-             display: flex; 
-             list-style: none; 
-         } 
-  
-         .menu li { 
-             margin: 40px; 
-         } 
-  
-         .menu a { 
-             color: white; 
-             text-decoration: none; 
-         } 
-         .content { 
-             display: flex; 
-             flex-direction: column; 
-             align-items: flex-end; 
-             padding: 20px; 
-             overflow-y: auto; 
-         } 
-         .content { 
-             display: flex; 
-             flex-direction: column; 
-             align-items: flex-end; 
-             padding: 20px; 
-             overflow-y: auto;  
-             margin-top: 35px;  
-             height: calc(100vh - 140px); 
-         } 
-         .product { 
-             display: flex; 
-             align-items: center; 
-             border: 1px solid green; 
-             border-radius: 30px;  
-             padding: 10px; 
-             width: 100%; 
-             cursor: pointer; 
-             
-         } 
-  
-         .product img { 
-             width: 150px; 
-             height: 150px; 
-         } 
-  
-         .product-info { 
-             margin-left: 10px; 
-         } 
-  
-         .product-name { 
-             font-size: 30px; 
-             font-weight: bold; 
-             text-decoration: underline; color: green;
-         } 
-  
-         .product-price { 
-             color: green; 
-             font-size: 25px; 
-             text-decoration: underline; color: green;
-         } 
-  
-         .product-button { 
-             display: block; 
-             background-color: green; 
-             color: white; 
-             padding: 15px 30px; 
-             margin-top: 10px; 
-             border-radius: 30px;  
-             text-align: center; 
-             text-decoration: none; 
-             width: 600px 
-  
-         } 
-  
-         .footer {  
-             display: flex; 
-             align-items: center; 
-             justify-content: space-between; 
-             background-color: green; 
-             padding: 10px;             
-         } 
-  
-         .footer-logo {  
-             font-size: 24px; 
-             font-weight: bold; 
-             color: white;             
-         } 
-  
-         .footer-menu {  
-            display:flex;  
-            list-style:none;            
-         } 
-  
-         .footer-menu li {  
-            margin-left :10px;            
-         } 
-     </style> 
+   <link rel="stylesheet" href="design.css">
+     <style>
+         .content {
+            margin-top: 16%; 
+         }
+        .product-name {
+            text-decoration: underline;  color: green;
+        }
+        .product-price {
+            text-decoration: underline;  color: green;
+        }
+     </style>
  </head> 
  <body> 
      <div class="header"> 
