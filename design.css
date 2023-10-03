@@ -1,4 +1,11 @@
 /* Estilos CSS */
+        :root {
+    --cor: #e60009d3;
+}
+/*cor  #ffe715d2 amarelo opaco 
+         #8098ffca azul opaco 
+         #e60009d3
+         */
         * { /* adicionado para fazer a página ocupar toda a tela */
             margin: 0;
             padding: 0;
@@ -7,8 +14,21 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: white;
-            border: 20px solid #ffe715d2;
+            background-image: url('fundo.jpeg'); /* Define a imagem do céu como plano de fundo */
+            background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            background-attachment: fixed; /* Fixa a imagem para que ela role com o conteúdo */
+            margin: 0;
+            padding: 0;
+            border: 40px solid var(--cor);
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.5); /* Adiciona uma sobreposição branca transparente */
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .header {
@@ -19,7 +39,7 @@
             display: flex;
             align-items: center;
             justify-content: space;
-            background-color: #ffe715d2;
+            background-color: var(--cor);
             padding: 10px;
         }
 
@@ -53,11 +73,12 @@
             overflow-y: auto; 
             margin-top: 35px; 
             calc(100vh - 140px);
+             
         }
         .product {
             display: flex;
             align-items: center;
-            border: 1px solid #ffe715d2;
+            border: 1px solid var(--cor);
             border-radius: 30px; 
             padding: 10px;
             width: 100%;
@@ -74,18 +95,20 @@
         }
 
         .product-name {
+            
             font-size: 40px;
             font-weight: bold;
-        }
+            
+                    }
 
         .product-price {
-            color: #ffe715d2;
+            color: var(--cor);            
             font-size: 25px;
         }
 
         .product-button {
             display: block;
-            background-color: #ffe715d2;
+            background-color: var(--cor);
             color: white;
             padding: 30px 60px;
             margin-top: 20px;
@@ -100,7 +123,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #ffe715d2;
+            background-color: var(--cor);
             padding: 10px;            
         }
 
@@ -161,21 +184,24 @@
 
         .product-price {
             font-size: 50px;
-            color: #ffe715d2;
+            color: green;
             margin-bottom: 20px;
         }
 
         .product-description {
+             color: white;
             font-size: 35px;
             margin-bottom: 20px;
         }
 
         .product-specs {
+            color: white;
             font-size: 30px;
             margin-bottom: 20px;
         }
 
-        .product-specs h2 {
+        .product-specs h2 { 
+            color: white;
             font-size: 35px;
             font-weight: bold;
         }
@@ -230,10 +256,10 @@
         }
          .center {
             text-align: center;
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #ffe715b4;
+            background-color: #e60009d3;
             color: #fff;
         }
          ul {
