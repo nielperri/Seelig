@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const senhaDigitada = passwordInput.value;
         if (senhaDigitada === senhaCorreta) {
             // Senha correta, redirecione para a página protegida
-            window.location.href = "pagina-protegida.html";
+            window.location.href = "pagina.protegida.html";
         } else {
             // Senha incorreta, exiba uma mensagem de erro (você pode personalizar isso)
             alert("Senha incorreta. Tente novamente.");
