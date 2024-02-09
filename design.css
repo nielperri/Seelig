@@ -1,6 +1,6 @@
 /* Estilos CSS */
         :root {
-    --cor: #e60009d3;
+    --cor: #e60009d3 
 }
 /*cor  #ffe715d2 amarelo opaco 
          #8098ffca azul opaco 
@@ -11,17 +11,34 @@
             padding: 0;
             box-sizing: border-box;
         }
+         .gallery {
+            display: flex;
+            justify-content: space-between;
+            overflow-x: auto;
+            
+        }
 
+        .gallery img {
+            width: 80px; /* Ajuste conforme necessário */
+            margin: 40px;
+            cursor: pointer;
+            border: 4px solid #e60009d3; 
+        }
+        
+        .main-image {
+            min-width: 400px; /* Ajuste conforme necessário */
+        }
+       
         body {
             font-family: Arial, sans-serif;
             background-image: url('fundo.jpeg'); /* Define a imagem do céu como plano de fundo */
-            background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+               background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
             background-repeat: no-repeat; /* Evita a repetição da imagem */
             background-attachment: fixed; /* Fixa a imagem para que ela role com o conteúdo */
             margin: 0;
             padding: 0;
-            border: 40px solid var(--cor);
-            background-color: rgba(255, 255, 255, 0.6);
+            
+           border: 40px solid var(--cor);
         }
 
         .overlay {
@@ -30,7 +47,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-
+      
         .header {
             position: fixed;
             top: 0;
@@ -110,13 +127,12 @@
             display: block;
             background-color: var(--cor);
             color: white;
-            padding: 30px 60px;
+            padding: 2% 25%;
             margin-top: 20px;
-            border-radius: 60px; 
+            border-radius: 70px; 
             text-align: center;
             text-decoration: none;
-            width: 800px
-            font-size: 200px
+            font-size: 200%;
         }
 
         .footer { 
@@ -159,6 +175,8 @@
             margin: 0 auto;
             padding: 20px;
             margin-top: 13%;
+            width: 100%;
+            
         }
 
         .product-details {
@@ -167,9 +185,12 @@
         }
 
         .product-image {
-            flex: 0 0 100%;
-            max-width: 100%;
-            margin-bottom: 20px;
+            width: 100%;
+    height: auto;
+    position: flex;
+    top: 0;
+    left: 0;
+    
         }
 
         .product-info {
@@ -189,13 +210,13 @@
         }
 
         .product-description {
-             color: white;
+             color: black;
             font-size: 35px;
             margin-bottom: 20px;
         }
 
         .product-specs {
-            color: white;
+            color: black;
             font-size: 30px;
             margin-bottom: 20px;
         }
@@ -228,12 +249,14 @@
         .product-grid {
             display: flex;
             flex-wrap: wrap;
+            width: 100%;
         }
 
         .related-product {
             flex-basis: calc(50% - 20px);
             margin-right: 20px;
             margin-bottom: 20px;
+            width: 50%;
         }
 
         .related-product-image {
@@ -253,6 +276,8 @@
         }
         .ref {
             text-decoration: underline;  color: black;
+            width: 50% ;
+            padding: 10px;
         }
          .center {
             text-align: center;
@@ -286,4 +311,5 @@
              color: #00ff42cf;
              text-align: center;
              padding: 10px 0;
+             /*#ffe715*/
        }
