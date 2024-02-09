@@ -3,34 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Detalhes do Produto</title>
-    <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="design.css">
 </head>
 <body>
     <div class="header">
         <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
         <ul class="menu">
-           <li><a href="index.html">Início</a></li>
+            <li><a href="index.html">Início</a></li>
+            
             <li><a href="contato.html">Contato</a></li>
             <li><a href="Agradecimento.html">Créditos</a></li>
         </ul>
-    </div>
-     <div class="overlay">
+        </div>
+         <div class="overlay">
     <div class="container">
         <div class="product-details">
-            <img src="monitor.jpg" alt="Monitor LG UltraWide" class="product-image">
+            <img src="monitor1.jpg" alt="Fone de ouvido Sony WH-1000XM4" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="monitor1.jpg" alt="Fone de ouvido Sony WH-1000XM4" onclick="changeImage('monitor1.jpg')">
+                <img src="monitor2.jpg" alt="Gisele" onclick="changeImage('monitor2.jpg')">
+                <img src="monitor3.jpg" alt="Gisele" onclick="changeImage('monitor3.jpg')">
+                <img src="monitor4.jpg" alt="Laptop" onclick="changeImage('monitor4.jpg')">
+                <img src="monitor5.jpg" alt="Mouse" onclick="changeImage('monitor5.jpg')">
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
             <div class="product-info">
                 <h1 class="product-title">Monitor LG UltraWide</h1>
                 <p class="product-price">R$ 890,00</p>
-                <div>
-                    <a href="comprar.html" class="product-button">Comprar</a>
-                </div>
+             <div>
+               <a href="comprar.html" class="product-button">Comprar</a>
+           </div>
                 <p class="product-description">
-                    O Monitor LG UltraWide é uma tela expansiva e imersiva projetada para oferecer uma experiência de visualização excepcional. Com um painel de alta resolução e proporção de 21:9, este monitor é perfeito para multitarefa, edição de vídeo, jogos e muito mais. Sua tecnologia avançada de imagem proporciona cores vibrantes e detalhes nítidos. O design elegante e sem moldura aumenta ainda mais sua aparência impressionante.
+                   O Monitor LG UltraWide é uma tela expansiva e imersiva projetada para oferecer uma experiência de visualização excepcional. Com um painel de alta resolução e proporção de 21:9, este monitor é perfeito para multitarefa, edição de vídeo, jogos e muito mais. Sua tecnologia avançada de imagem proporciona cores vibrantes e detalhes nítidos. O design elegante e sem moldura aumenta ainda mais sua aparência impressionante.
                 </p>
                 <div class="product-specs">
                     <h2>Ficha Técnica</h2>
                     <ul>
-                          <li><strong>Tamanho da Tela:</strong> 34 polegadas</li>
+                        <li><strong>Tamanho da Tela:</strong> 34 polegadas</li>
     <li><strong>Resolução:</strong> 3440 x 1440 pixels</li>
     <li><strong>Proporção da Tela:</strong> 21:9</li>
     <li><strong>Tipo de Painel:</strong> IPS</li>
@@ -49,15 +58,25 @@
                 </div>
             </div>
         </div>
-    </div>
-     </div>
-    <div class="related-products">
-        <h2>Produtos Relacionados</h2>
-        <div id="related-products-content">
-            <!-- O conteúdo relacionado será inserido aqui por meio de JavaScript -->
+       
+                 <div class="container">
+        <div class="product-details">
+            <!-- Conteúdo da página principal -->
+        </div>
+
+        <!-- Incorporar a seção de produtos relacionados usando um iframe -->
+        <div class="related-products">
+            <div id="related-products-content">
+                <!-- O conteúdo relacionado será inserido aqui -->
+            </div>
         </div>
     </div>
 
     <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
 </body>
 </html>
