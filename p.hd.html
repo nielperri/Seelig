@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Detalhes do Produto</title>
-    <link rel="stylesheet" href="design.css">
+     <link rel="stylesheet" href="design.css">
 </head>
 <body>
     <div class="header">
         <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
         <ul class="menu">
             <li><a href="index.html">Início</a></li>
+            
             <li><a href="contato.html">Contato</a></li>
             <li><a href="Agradecimento.html">Créditos</a></li>
         </ul>
         </div>
-     <div class="overlay">
+         <div class="overlay">
     <div class="container">
         <div class="product-details">
-            <img src="hd.jpg" alt="HD externo Seagate Expansion 2TB" class="product-image">
+            <img src="hd1.jpg" alt="HD externo Seagate Expansion 2TB" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="hd1.jpg" alt="HD externo Seagate Expansion 2TB" onclick="changeImage('hd1.jpg')">
+                <img src="hd2.jpg" alt="HD externo Seagate Expansion 2TB" onclick="changeImage('hd2.jpg')">
+                <img src="hd3.jpg" alt="HD externo Seagate Expansion 2TB" onclick="changeImage('hd3.jpg')">
+                <img src="hd1.jpg" alt="HD externo Seagate Expansion 2TB" onclick="changeImage('hd1.jpg')">
+             
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
             <div class="product-info">
                 <h1 class="product-title">HD externo Seagate Expansion 2TB</h1>
-                <p class="product-price">R$ 98,00</p>
+                             
+                                <p class="product-price">R$ 98,00</p>
              <div>
                <a href="comprar.html" class="product-button">Comprar</a>
            </div>
@@ -43,9 +53,8 @@
                 </div>
             </div>
         </div>
-    </div>
-         
-                  <div class="container">
+       
+                 <div class="container">
         <div class="product-details">
             <!-- Conteúdo da página principal -->
         </div>
@@ -59,6 +68,10 @@
     </div>
 
     <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
 </body>
 </html>
-
