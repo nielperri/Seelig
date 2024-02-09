@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Detalhes do Produto</title>
-   <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
     <div class="header">
         <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
         <ul class="menu">
-           <li><a href="index.html">Início</a></li>
+            <li><a href="index.html">Início</a></li>
+           
             <li><a href="contato.html">Contato</a></li>
             <li><a href="Agradecimento.html">Créditos</a></li>
         </ul>
         </div>
-     <div class="overlay">
+         <div class="overlay">
     <div class="container">
         <div class="product-details">
-            <img src="mouse.jpg" alt="Mouse Logitech MX Master" class="product-image">
+             <img src="mouse1.jpg" alt="Fone de ouvido Sony WH-1000XM4" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="mouse1.jpg" alt="Fone de ouvido Sony WH-1000XM4" onclick="changeImage('mouse1.jpg')">
+                <img src="mouse2.jpg" alt="Gisele" onclick="changeImage('mouse2.jpg')">
+                <img src="mouse3.jpg" alt="Gisele" onclick="changeImage('mouse3.jpg')">
+                <img src="mouse4.jpg" alt="Laptop" onclick="changeImage('mouse4.jpg')">
+                <img src="mouse5.jpg" alt="Mouse" onclick="changeImage('mouse5.jpg')">
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
             <div class="product-info">
                 <h1 class="product-title">Mouse Logitech MX Master</h1>
                 <p class="product-price">R$ 399,00</p>
@@ -44,76 +53,25 @@
                 </div>
             </div>
         </div>
-    </div>
        
-                 <div class="related-products">
-            <h2>Produtos Relacionados</h2>
-            <div class="product-grid">
-                <div class="related-product">
-                   <a href="p.teclado.html" class="ref"><img src="teclado.jpg" alt="Teclado Microsoft Sculpt Ergonomic" class="related-product-image"></a>
-                    <h3 class="related-product-title">Teclado Microsoft Sculpt Ergonomic</h3>
-                    <p class="related-product-price">R$ 499,00</p>
-                </div>
-                <div class="related-product">
-                   <a href="p.monitor.html" class="ref"><img src="monitor.jpg" alt="Monitor LG UltraWide" class="related-product-image"></a>
-                    <h3 class="related-product-title">Monitor LG UltraWide</h3>
-                    <p class="related-product-price">R$ 1.999,00</p>
-                </div>
-                  <div class="related-products">
-            <h2>Produtos Relacionados</h2>
-            <div class="product-grid">
-                <div class="related-product">
-                    <a href="p.fone.html" class="ref"><img src="fone.jpg" alt="Fone de ouvido Sony WH-1000XM4" class="related-product-image"></a>
-                    <h3 class="related-product-title">Fone de ouvido Sony WH-1000XM4</h3>
-                    <p class="related-product-price">R$ 99,00</p>
-                </div>
-                <div class="related-product">
-                    <a href="p.s21.html" class="ref"><img src="smartphone.jpg" alt="Smartphone Samsung Galaxy S21" class="related-product-image"></a>
-                    <h3 class="related-product-title">Smartphone Samsung Galaxy S21</h3>
-                    <p class="related-product-price">R$ 2.499,00</p>
-                </div>
-                  <div class="related-products">
-            <h2>Produtos Relacionados</h2>
-            <div class="product-grid">
-                <div class="related-product">
-                    <a href="p.roteador.html" class="ref"><img src="roteador.jpg" alt="Roteador TP-Link Archer C6 AC1200" class="related-product-image"></a>
-                    <h3 class="related-product-title">Roteador TP-Link Archer C6 AC1200</h3>
-                    <p class="related-product-price">R$ 149,00</p>
-                </div>
-                <div class="related-product">
-                    <a href="p.hd.html" class="ref"><img src="hd.jpg" alt="HD externo Seagate Expansion 2TB" class="related-product-image"></a>
-                    <h3 class="related-product-title">HD externo Seagate Expansion </h3>
-                    <p class="related-product-price">R$ 98,00</p>
-                </div>
-                  <div class="related-products">
-            <h2>Produtos Relacionados</h2>
-            <div class="product-grid">
-                <div class="related-product">
-                    <a href="p.caixa.html" class="ref"><img src="caixa.jpg" alt="Caixa de som JBL Flip" class="related-product-image"></a>
-                    <h3 class="related-product-title">Caixa de som JBL Flip5</h3>
-                    <p class="related-product-price">R$ 299,00</p>
-                </div>
-                <div class="related-product">
-                    <a href="p.laptop.html" class="ref"><img src="laptop.jpg" alt="Laptop Dell Inspiron" class="related-product-image"></a>
-                    <h3 class="related-product-title">Laptop Dell Inspiron</h3>
-                    <p class="related-product-price">R$ 1.800,00</p>
-                </div>
+                 <div class="container">
+        <div class="product-details">
+            <!-- Conteúdo da página principal -->
+        </div>
+
+        <!-- Incorporar a seção de produtos relacionados usando um iframe -->
         <div class="related-products">
-            <h2>Produtos Relacionados</h2>
-            <div class="product-grid">
-                <div class="related-product">
-                    <a href="p.webcam.html" class="ref"><img src="webcam.jpg" alt="Webcam Logitech C920 HD Pro" class="related-product-image"></a>
-                    <h3 class="related-product-title">Webcam Logitech C920 HD Pro</h3>
-                    <p class="related-product-price">R$ 200,00</p>
-                </div>
-                
-                <!-- Adicione mais produtos relacionados conforme necessário -->
+            <div id="related-products-content">
+                <!-- O conteúdo relacionado será inserido aqui -->
             </div>
         </div>
     </div>
+
+    <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
 </body>
 </html>
-
-
-
-
