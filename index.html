@@ -1,294 +1,297 @@
-<!DOCTYPE html> 
- <html lang="pt"> 
- <head> 
-
-     <meta charset="UTF-8"> 
-   <link rel="stylesheet" href="design.css">
-     <style>
-         .content {
-            margin-top: 16%; 
-         }
-        .product-name {
-            text-decoration: underline;  color: white;
-        }
-        .product-price {
-            text-decoration: underline;  color: var(--cor);
-        }
-     </style>
- </head> 
- <body> 
-     <div class="header"> 
-         <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
-         <ul class="menu"> 
-           <li><a href="index.html">Início</a></li> 
-           <li><a href="contato.html">Contato</a></li> 
-           <li><a href="Agradecimento.html">Créditos</a></li>
-         </ul> 
-     </div> 
-   <div class="overlay">
-     <div class="content"> 
+<!DOCTYPE html>  
+  <html lang="pt">  
+  <head>  
   
-        <!-- adicionado mais 10 produtos teste --> 
-        <div class="product">
-          <a href="produto.mouse.html"> 
-            <img src="mouse.jpg" alt="Mouse"> 
-            <div class="product-info"> 
-                <div class="product-name">Mouse Logitech MX Master</div> 
-                <div class="product-price">R$ 59,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
+      <meta charset="UTF-8">  
+    <link rel="stylesheet" href="design.css"> 
+      <style> 
+          .content { 
+             margin-top: 16%;  
+          } 
+         .product-name { 
+             text-decoration: underline;  color: white; 
+         } 
+         .product-price { 
+             text-decoration: underline;  color: var(--cor); 
+         } 
+      </style> 
+  </head>  
+  <body>  
+      <div class="header">  
+          <div class="logo"><img src="icone(2).png" alt="Ícone"></div> 
+          <ul class="menu">  
+              <li><a href="index.html">Início</a></li>  
+              <li><a href="contato.html">Contato</a></li>  
+              <li><a href="Agradecimento.html">Doações</a></li>
+          </ul>  
+      </div>  
+             <div class="overlay">
+      <div class="content">  
   
-        <div class="product"> 
-            <a href="p.teclado.html">
-               <img src="teclado.jpg" alt="Teclado Microsoft Sculpt Ergonomic"> 
-            <div class="product-info"> 
-                <div class="product-name">Teclado Microsoft Sculpt Ergonomic</div> 
-                <div class="product-price">R$ 349,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
-  
-        <div class="product"> 
-            <a href="p.monitor.html">
-            <img src="monitor.jpg" alt="Monitor LG UltraWide "> 
-            <div class="product-info"> 
-                <div class="product-name">Monitor LG UltraWide</div> 
-                <div class="product-price">R$ 890,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
-
-  
-        <div class="product"> 
-            <a href="p.impressora.html">
-            <img src="impressora.jpg" alt="Impressora"> 
-            <div class="product-info"> 
-                <div class="product-name">Impressora HP LaserJet Pro</div> 
-                <div class="product-price">R$ 999,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
-  
-        <div class="product"> 
-            <a href="p.webcam.html">
-            <img src="webcam.jpg" alt="Webcam"> 
-            <div class="product-info"> 
-                <div class="product-name">Webcam Logitech C920 HD Pro</div> 
-                <div class="product-price">R$ 200,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
-  
-        <div class="product"> 
-            <a href="p.fone.html">
-            <img src="fone.jpg" alt="Fone de ouvido"> 
-            <div class="product-info"> 
-                <div class="product-name">Fone de ouvido Sony WH-1000XM4</div> 
-                <div class="product-price">R$ 99,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
-  
-        <div class="product"> 
-            <a href="p.caixa.html">
-            <img src="caixa.jpg" alt="Caixa de som"> 
-            <div class="product-info"> 
-                <div class="product-name">Caixa de som JBL Flip 5</div> 
-                <div class="product-price">R$ 299,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
-  
-        <div class="product"> 
-            <a href="p.pendrive.html">
-            <img src="pendrive.jpg" alt="Pendrive"> 
-            <div class="product-info"> 
-                <div class="product-name">Pendrive SanDisk Ultra Fit 128GB</div> 
-                <div class="product-price">R$ 35,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
-  
-        <div class="product"> 
-            <a href="p.hd.html">
-            <img src="hd.jpg" alt="HD externo"> 
-            <div class="product-info"> 
-                <div class="product-name">HD externo Seagate Expansion 2TB</div> 
-                <div class="product-price">R$ 98,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
-  
-        <div class="product"> 
-            <a href="p.roteador.html">
-            <img src="roteador.jpg" alt="Roteador"> 
-            <div class="product-info"> 
-                <div class="product-name">Roteador TP-Link Archer C6 AC1200</div> 
-                <div class="product-price">R$ 149,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
-  
+         <!-- adicionado mais 10 produtos teste -->  
          <div class="product"> 
-             <a href="p.laptop.html">
-             <img src="laptop.jpg" alt="Laptop"> 
-             <div class="product-info"> 
-                 <div class="product-name">Laptop Dell Inspiron</div> 
-                 <div class="product-price">R$ 1.800,00</div> 
-                 <a href="#" class="product-button">Comprar</a> 
-             </div> 
-         </div> 
+           <a href="produto.mouse.html">  
+             <img src="mouse4.jpg" alt="Mouse">  
+             <div class="product-info">  
+                 <div class="product-name">Mouse Logitech MX Master</div>  
+                 <div class="product-price">R$ 29,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
+         <div class="product">  
+             <a href="p.teclado.html"> 
+                <img src="teclado1.jpg" alt="Teclado Microsoft Sculpt Ergonomic">  
+             <div class="product-info">  
+                 <div class="product-name">Teclado Microsoft Sculpt Ergonomic</div>  
+                 <div class="product-price">R$ 349,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
+  
+         <div class="product">  
+             <a href="p.monitor.html"> 
+             <img src="monitor1.jpg" alt="Monitor LG UltraWide ">  
+             <div class="product-info">  
+                 <div class="product-name">Monitor LG UltraWide</div>  
+                 <div class="product-price">R$ 890,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
+  
+  
+         <div class="product">  
+             <a href="p.impressora.html"> 
+             <img src="impressora1.jpg" alt="Impressora">  
+             <div class="product-info">  
+                 <div class="product-name">Impressora HP LaserJet Pro</div>  
+                 <div class="product-price">R$ 999,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
+  
+         <div class="product">  
+             <a href="p.webcam.html"> 
+             <img src="webcam7.jpg" alt="Webcam">  
+             <div class="product-info">  
+                 <div class="product-name">Webcam Logitech C920 HD Pro</div>  
+                 <div class="product-price">R$ 200,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
+  
+         <div class="product">  
+             <a href="p.fone.html"> 
+             <img src="fone1.jpg" alt="Fone de ouvido">  
+             <div class="product-info">  
+                 <div class="product-name">Fone de ouvido Sony WH-1000XM4</div>  
+                 <div class="product-price">R$ 99,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
+  
+         <div class="product">  
+             <a href="p.caixa.html"> 
+             <img src="caixa1.jpg" alt="Caixa de som">  
+             <div class="product-info">  
+                 <div class="product-name">Caixa de som JBL Flip 5</div>  
+                 <div class="product-price">R$ 299,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
+  
+         <div class="product">  
+             <a href="p.pendrive.html"> 
+             <img src="pendrive1.jpg" alt="Pendrive">  
+             <div class="product-info">  
+                 <div class="product-name">Pendrive SanDisk Ultra Fit 128GB</div>  
+                 <div class="product-price">R$ 35,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
+  
+         <div class="product">  
+             <a href="p.hd.html"> 
+             <img src="hd1.jpg" alt="HD externo">  
+             <div class="product-info">  
+                 <div class="product-name">HD externo Seagate Expansion 2TB</div>  
+                 <div class="product-price">R$ 98,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
+  
+         <div class="product">  
+             <a href="p.roteador.html"> 
+             <img src="roteador7.jpg" alt="Roteador">  
+             <div class="product-info">  
+                 <div class="product-name">Roteador TP-Link Archer C6 AC1200</div>  
+                 <div class="product-price">R$ 149,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
+  
+          <div class="product">  
+              <a href="p.laptop.html"> 
+              <img src="laptop1.jpg" alt="Laptop">  
+              <div class="product-info">  
+                  <div class="product-name">Laptop Dell Inspiron</div>  
+                  <div class="product-price">R$ 1.800,00</div>  
+                  <a href="#" class="product-button">Comprar</a>  
+              </div>  
+          </div>  
+  
+          <div class="product">  
+              <a href="p.s21.html"> 
+              <img src="s211.jpg" alt="Smartphone">  
+              <div class="product-info">  
+                  <div class="product-name">Smartphone Samsung Galaxy S21</div>  
+                  <div class="product-price">R$ 2.499,00</div>  
+                  <a href="#" class="product-button">Comprar</a>  
+              </div>  
+            </div>  
+  
+          <div class="product">  
+              <a href="p.tablet.html"> 
+              <img src="tablet1.jpg" alt="Tablet">  
+              <div class="product-info">  
+                  <div class="product-name">Tablet Apple iPad Pro</div>  
+                  <div class="product-price">R$ 2.350,00</div>  
+                  <a href="#" class="product-button">Comprar</a>  
+               </div>  
+              </div>     
+  
+            <!-- adicionado mais 10 produtos teste -->  
          <div class="product"> 
-             <a href="p.s21.html">
-             <img src="smartphone.jpg" alt="Smartphone"> 
-             <div class="product-info"> 
-                 <div class="product-name">Smartphone Samsung Galaxy S21</div> 
-                 <div class="product-price">R$ 2.499,00</div> 
-                 <a href="#" class="product-button">Comprar</a> 
-             </div> 
-           </div> 
+           <a href="produto.mouse4.html">  
+             <img src="mouse1.jpg" alt="Mouse">  
+             <div class="product-info">  
+                 <div class="product-name">Mouse Logitech MX Master</div>  
+                 <div class="product-price">R$ 29,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
-         <div class="product"> 
-             <a href="p.tablet.html">
-             <img src="tablet.jpg" alt="Tablet"> 
-             <div class="product-info"> 
-                 <div class="product-name">Tablet Apple iPad Pro</div> 
-                 <div class="product-price">R$ 2.350,00</div> 
-                 <a href="#" class="product-button">Comprar</a> 
-              </div> 
-             </div>    
+         <div class="product">  
+             <a href="p.teclado.html"> 
+                <img src="teclado1.jpg" alt="Teclado Microsoft Sculpt Ergonomic">  
+             <div class="product-info">  
+                 <div class="product-name">Teclado Microsoft Sculpt Ergonomic</div>  
+                 <div class="product-price">R$ 349,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
-         <div class="product"> 
-             <a href="produto.mouse.html">
-            <img src="mouse.jpg" alt="Mouse"> 
-            <div class="product-info"> 
-                <div class="product-name">Mouse Logitech MX Master</div> 
-                <div class="product-price">R$ 59,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
+         <div class="product">  
+             <a href="p.monitor.html"> 
+             <img src="monitor1.jpg" alt="Monitor LG UltraWide ">  
+             <div class="product-info">  
+                 <div class="product-name">Monitor LG UltraWide</div>  
+                 <div class="product-price">R$ 890,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
-        <div class="product"> 
-            <a href="p.teclado.html">
-            <img src="teclado.jpg" alt="Teclado"> 
-            <div class="product-info"> 
-                <div class="product-name">Teclado Microsoft Sculpt Ergonomic</div> 
-                <div class="product-price">R$ 349,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
   
-        <div class="product"> 
-            <a href="p.monitor.html">
-            <img src="monitor.jpg" alt="Monitor"> 
-            <div class="product-info"> 
-                <div class="product-name">Monitor LG UltraWide</div> 
-                <div class="product-price">R$ 890,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
+         <div class="product">  
+             <a href="p.impressora.html"> 
+             <img src="impressora1.jpg" alt="Impressora">  
+             <div class="product-info">  
+                 <div class="product-name">Impressora HP LaserJet Pro</div>  
+                 <div class="product-price">R$ 999,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
-        <div class="product"> 
-            <a href="p.impressora.html">
-            <img src="impressora.jpg" alt="Impressora"> 
-            <div class="product-info"> 
-                <div class="product-name">Impressora HP LaserJet Pro</div> 
-                <div class="product-price">R$ 999,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
+         <div class="product">  
+             <a href="p.webcam.html"> 
+             <img src="webcam7.jpg" alt="Webcam">  
+             <div class="product-info">  
+                 <div class="product-name">Webcam Logitech C920 HD Pro</div>  
+                 <div class="product-price">R$ 200,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
-        <div class="product"> 
-            <a href="p.webcam.html">
-            <img src="webcam.jpg" alt="Webcam"> 
-            <div class="product-info"> 
-                <div class="product-name">Webcam Logitech C920 HD Pro</div> 
-                <div class="product-price">R$ 200,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
+         <div class="product">  
+             <a href="p.fone.html"> 
+             <img src="fone1.jpg" alt="Fone de ouvido">  
+             <div class="product-info">  
+                 <div class="product-name">Fone de ouvido Sony WH-1000XM4</div>  
+                 <div class="product-price">R$ 99,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
-        <div class="product"> 
-            <a href="p.fone.html">
-            <img src="fone.jpg" alt="Fone de ouvido"> 
-            <div class="product-info"> 
-                <div class="product-name">Fone de ouvido Sony WH-1000XM4</div> 
-                <div class="product-price">R$ 99,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
+         <div class="product">  
+             <a href="p.caixa.html"> 
+             <img src="caixa1.jpg" alt="Caixa de som">  
+             <div class="product-info">  
+                 <div class="product-name">Caixa de som JBL Flip 5</div>  
+                 <div class="product-price">R$ 299,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
-        <div class="product"> 
-            <a href="p.caixa.html">
-            <img src="caixa.jpg" alt="Caixa de som"> 
-            <div class="product-info"> 
-                <div class="product-name">Caixa de som JBL Flip 5</div> 
-                <div class="product-price">R$ 299,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
+         <div class="product">  
+             <a href="p.pendrive.html"> 
+             <img src="pendrive1.jpg" alt="Pendrive">  
+             <div class="product-info">  
+                 <div class="product-name">Pendrive SanDisk Ultra Fit 128GB</div>  
+                 <div class="product-price">R$ 35,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
-        <div class="product"> 
-            <a href="p.pendrive.html">
-            <img src="pendrive.jpg" alt="Pendrive"> 
-            <div class="product-info"> 
-                <div class="product-name">Pendrive SanDisk Ultra Fit 128GB</div> 
-                <div class="product-price">R$ 35,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
+         <div class="product">  
+             <a href="p.hd.html"> 
+             <img src="hd1.jpg" alt="HD externo">  
+             <div class="product-info">  
+                 <div class="product-name">HD externo Seagate Expansion 2TB</div>  
+                 <div class="product-price">R$ 98,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
-        <div class="product"> 
-            <a href="p.hd.html">
-            <img src="hd.jpg" alt="HD externo"> 
-            <div class="product-info"> 
-                <div class="product-name">HD externo Seagate Expansion 2TB</div> 
-                <div class="product-price">R$ 98,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
+         <div class="product">  
+             <a href="p.roteador.html"> 
+             <img src="roteador7.jpg" alt="Roteador">  
+             <div class="product-info">  
+                 <div class="product-name">Roteador TP-Link Archer C6 AC1200</div>  
+                 <div class="product-price">R$ 149,00</div>  
+                 <a href="#" class="product-button">Comprar</a>  
+             </div>  
+         </div>  
   
-        <div class="product"> 
-           <a href="p.roteador.html">
-            <img src="roteador.jpg" alt="Roteador"> 
-            <div class="product-info"> 
-                <div class="product-name">Roteador TP-Link Archer C6 AC1200</div> 
-                <div class="product-price">R$ 149,00</div> 
-                <a href="#" class="product-button">Comprar</a> 
-            </div> 
-        </div> 
+          <div class="product">  
+              <a href="p.laptop.html"> 
+              <img src="laptop1.jpg" alt="Laptop">  
+              <div class="product-info">  
+                  <div class="product-name">Laptop Dell Inspiron</div>  
+                  <div class="product-price">R$ 1.800,00</div>  
+                  <a href="#" class="product-button">Comprar</a>  
+              </div>  
+          </div>  
   
-         <div class="product"> 
-            <a href="p.laptop.html">
-             <img src="laptop.jpg" alt="Laptop"> 
-             <div class="product-info"> 
-                 <div class="product-name">Laptop Dell Inspiron</div> 
-                 <div class="product-price">R$ 1.800,00</div> 
-                 <a href="#" class="product-button">Comprar</a> 
-             </div> 
-         </div> 
+          <div class="product">  
+              <a href="p.s21.html"> 
+              <img src="s211.jpg" alt="Smartphone">  
+              <div class="product-info">  
+                  <div class="product-name">Smartphone Samsung Galaxy S21</div>  
+                  <div class="product-price">R$ 2.499,00</div>  
+                  <a href="#" class="product-button">Comprar</a>  
+              </div>  
+            </div>  
   
-         <div class="product"> 
-             <a href="p.s21.html">
-             <img src="smartphone.jpg" alt="Smartphone"> 
-             <div class="product-info"> 
-                 <div class="product-name">Smartphone Samsung Galaxy S21</div> 
-                 <div class="product-price">R$ 2.499,00</div> 
-                 <a href="#" class="product-button">Comprar</a> 
-             </div> 
-         </div> 
-  
-         <div class="product"> 
-             <a href="p.tablet.html">
-             <img src="tablet.jpg" alt="Tablet"> 
-             <div class="product-info"> 
-                 <div class="product-name">Tablet Apple iPad Pro</div> 
-                 <div class="product-price">R$ 5.999,00</div> 
-               <a href="#" class="product-button">Comprar</a> 
-             </div> 
-         </div> 
-     </div>
-             </bady> 
-   </html>
+          <div class="product">  
+              <a href="p.tablet.html"> 
+              <img src="tablet1.jpg" alt="Tablet">  
+              <div class="product-info">  
+                  <div class="product-name">Tablet Apple iPad Pro</div>  
+                  <div class="product-price">R$ 2.350,00</div>  
+                  <a href="#" class="product-button">Comprar</a>  
+               </div>  
+              </div>
+              </div>  
+          </div>  
+              </bady>  
+    </html>
