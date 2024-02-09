@@ -10,14 +10,23 @@
         <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
         <ul class="menu">
             <li><a href="index.html">Início</a></li>
+         
             <li><a href="contato.html">Contato</a></li>
             <li><a href="Agradecimento.html">Créditos</a></li>
         </ul>
         </div>
-     <div class="overlay">
+         <div class="overlay">
     <div class="container">
         <div class="product-details">
-            <img src="teclado.jpg" alt="Teclado Microsoft Sculpt Ergonomic" class="product-image">
+             <img src="teclado1.jpg" alt="Teclado Microsoft Sculpt Ergonomic" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="teclado1.jpg" alt="Teclado Microsoft Sculpt Ergonomic" onclick="changeImage('teclado1.jpg')">
+                <img src="teclado2.jpg" alt="Teclado Microsoft Sculpt Ergonomic" onclick="changeImage('teclado2.jpg')">
+                <img src="teclado3.jpg" alt="Teclado Microsoft Sculpt Ergonomic" onclick="changeImage('teclado3.jpg')">
+                <img src="teclado4.jpg" alt="Teclado Microsoft Sculpt Ergonomic" onclick="changeImage('teclado4.jpg')">
+                
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
             <div class="product-info">
                 <h1 class="product-title">Teclado Microsoft Sculpt Ergonomic</h1>
                 <p class="product-price">R$ 349,00</p>
@@ -43,7 +52,7 @@
                 </div>
             </div>
         </div>
-    </div>
+       
                  <div class="container">
         <div class="product-details">
             <!-- Conteúdo da página principal -->
@@ -58,5 +67,10 @@
     </div>
 
     <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
 </body>
 </html>
