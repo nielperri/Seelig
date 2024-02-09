@@ -13,40 +13,40 @@
             <li><a href="contato.html">Contato</a></li>
             <li><a href="Agradecimento.html">Créditos</a></li>
         </ul>
-        </div>
-      <div class="overlay">
+    </div>
+    <div class="overlay">
     <div class="container">
         <div class="product-details">
-            <img src="fone.jpg" alt="Fone de ouvido Sony WH-1000XM4" class="product-image">
+           <div class="product-info">
+                        <div class="product-details">
+            <img src="fone1.jpg" alt="Fone de ouvido Sony WH-1000XM4" onclick="changeImage('fone1.jpg')" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="fone1.jpg" alt="Gisele" onclick="changeImage('fone1.jpg')">
+                <img src="fone2.jpg" alt="Gisele" onclick="changeImage('fone2.jpg')">
+                <img src="fone3.jpg" alt="Laptop" onclick="changeImage('fone3.jpg')">
+                <img src="fone4.jpg" alt="Mouse" onclick="changeImage('fone4.jpg')">
+                <img src="fone5.jpg" alt="Laptop" onclick="changeImage('fone5.jpg')">
+              
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
             <div class="product-info">
                 <h1 class="product-title">Mouse Logitech MX Master</h1>
                 <p class="product-price">R$ 399,00</p>
-             <div>
+                            <div>
                <a href="comprar.html" class="product-button">Comprar</a>
            </div>
                 <p class="product-description">
-                    O Sony WH-1000XM4 é um fone de ouvido over-ear premium que oferece uma experiência de audição excepcional com cancelamento de ruído líder na categoria. Ele é projetado para audiófilos e amantes da música que desejam mergulhar em um som de alta qualidade, seja em casa, no escritório ou em movimento.Este fone de ouvido é conhecido por sua excelente qualidade de áudio, com graves profundos, médios nítidos e agudos cristalinos. Ele suporta codecs de áudio de alta resolução, como LDAC, para uma reprodução de áudio sem fio de alta qualidade.Além disso, o Sony WH-1000XM4 possui cancelamento de ruído adaptável que ajusta automaticamente a intensidade do cancelamento de ruído com base no ambiente ao seu redor. Isso significa que você pode desfrutar da sua música sem distrações, mesmo em ambientes barulhentos.
+                    O Sony WH-1000XM4 é um fone de ouvido over-ear premium que oferece uma experiência de audição excepcional com cancelamento de ruído líder na categoria. Ele é projetado para audiófilos e amantes da música que desejam mergulhar em um som de alta qualidade, seja em casa, no escritório ou em movimento. Este fone de ouvido é conhecido por sua excelente qualidade de áudio, com graves profundos, médios nítidos e agudos cristalinos. Ele suporta codecs de áudio de alta resolução, como LDAC, para uma reprodução de áudio sem fio de alta qualidade. Além disso, o Sony WH-1000XM4 possui cancelamento de ruído adaptável que ajusta automaticamente a intensidade do cancelamento de ruído com base no ambiente ao seu redor. Isso significa que você pode desfrutar da sua música sem distrações, mesmo em ambientes barulhentos.
                 </p>
                 <div class="product-specs">
                     <h2>Ficha Técnica</h2>
                     <ul>
-                     <li>  Tipo de Fone de Ouvido: Over-ear (circum-aural)</li>
-                     <li>Cancelamento de Ruído Ativo: Sim, com cancelamento de ruído adaptável</li>
-                     <li>Qualidade de Áudio: Alta resolução, suporta LDAC, codecs de áudio avançados</li>
-                     <li>Conectividade: Bluetooth sem fio</li><li>Bateria: Até 30 horas de reprodução (com cancelamento de ruído ativado)</li>
-                     <li>Microfone Integrado: Sim, com suporte a chamadas telefônicas</li>
-                     <li>Controles: Toque para reprodução/pausa, ajuste de volume, chamadas e assistentes de voz</li>
-                     <li>Assistente de Voz: Compatível com Google Assistant e Amazon Alaxa</li>
-                     <li>Peso: Aproximadamente 254 gramas</li>
+                        <li>Tipo de Fone de Ouvido: Over-ear (circum-aural)</li>
+                        <li>Cancelamento de Ruído Ativo: Sim, com cancelamento de ruído adaptável</li>
                         <!-- Adicione mais especificações conforme necessário -->
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-          <div class="container">
-        <div class="product-details">
-            <!-- Conteúdo da página principal -->
         </div>
 
         <!-- Incorporar a seção de produtos relacionados usando um iframe -->
@@ -58,5 +58,10 @@
     </div>
 
     <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
 </body>
 </html>
