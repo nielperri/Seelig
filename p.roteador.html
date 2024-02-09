@@ -9,15 +9,26 @@
     <div class="header">
         <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
         <ul class="menu">
-          <li><a href="index.html">Início</a></li>
+            <li><a href="index.html">Início</a></li>
+         
             <li><a href="contato.html">Contato</a></li>
             <li><a href="Agradecimento.html">Créditos</a></li>
         </ul>
         </div>
-     <div class="overlay">
+         <div class="overlay">
     <div class="container">
         <div class="product-details">
-            <img src="roteador.jpg" alt="Roteador TP-Link Archer C6 AC1200" class="product-image">
+            <img src="roteador7.jpg" alt="Roteador TP-Link Archer C6 AC1200" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="roteador7.jpg" alt="Roteador TP-Link Archer C6 AC1200" onclick="changeImage('roteador7.jpg')"> 
+                <img src="roteador2.jpg" alt="Roteador TP-Link Archer C6 AC1200" onclick="changeImage('roteador2.jpg')">
+                <img src="roteador3.jpg" alt="Roteador TP-Link Archer C6 AC1200" onclick="changeImage('roteador3.jpg')">
+                <img src="roteador4.jpg" alt="Roteador TP-Link Archer C6 AC1200" onclick="changeImage('roteador4.jpg')">
+                <img src="roteador5.jpg" alt="Roteador TP-Link Archer C6 AC1200" onclick="changeImage('roteador5.jpg')">
+                <img src="roteador6.jpg" alt="Roteador TP-Link Archer C6 AC1200" onclick="changeImage('roteador6.jpg')">
+                
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
             <div class="product-info">
                 <h1 class="product-title">Roteador TP-Link Archer C6 AC1200</h1>
                 <p class="product-price">R$ 149,00</p>
@@ -45,8 +56,8 @@
                 </div>
             </div>
         </div>
-    </div>
-                  <div class="container">
+       
+                 <div class="container">
         <div class="product-details">
             <!-- Conteúdo da página principal -->
         </div>
@@ -60,5 +71,10 @@
     </div>
 
     <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
 </body>
 </html>
