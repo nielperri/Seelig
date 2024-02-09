@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Detalhes do Produto</title>
-   <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
     <div class="header">
         <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
         <ul class="menu">
             <li><a href="index.html">Início</a></li>
+          
             <li><a href="contato.html">Contato</a></li>
             <li><a href="Agradecimento.html">Créditos</a></li>
         </ul>
         </div>
-     <div class="overlay">
+         <div class="overlay">
     <div class="container">
         <div class="product-details">
-            <img src="smartphone.jpg" alt="Smartphone Samsung Galaxy S21" class="product-image">
+             <img src="s211.jpg" alt="Smartphone Samsung Galaxy S21 " class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="s211.jpg" alt="Smartphone Samsung Galaxy S21" onclick="changeImage('s211.jpg')">
+                <img src="s212.jpg" alt="Smartphone Samsung Galaxy S21" onclick="changeImage('s212.jpg')">
+                <img src="s213.jpg" alt="Smartphone Samsung Galaxy S21" onclick="changeImage('s213.jpg')">
+                <img src="s214.jpg" alt="Smartphone Samsung Galaxy S21" onclick="changeImage('s214.jpg')">
+                <img src="s215.jpg" alt="Smartphone Samsung Galaxy S21" onclick="changeImage('s215.jpg')">
+                <img src="s216.jpg" alt="Smartphone Samsung Galaxy S21" onclick="changeImage('s216.jpg')">
+                
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
             <div class="product-info">
                 <h1 class="product-title">Smartphone Samsung Galaxy S21</h1>
                 <p class="product-price">R$ 2.499,00</p>
@@ -46,8 +57,8 @@
                 </div>
             </div>
         </div>
-    </div>
-                  <div class="container">
+       
+                 <div class="container">
         <div class="product-details">
             <!-- Conteúdo da página principal -->
         </div>
@@ -61,6 +72,10 @@
     </div>
 
     <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
 </body>
 </html>
-
