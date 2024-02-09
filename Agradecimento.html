@@ -1,55 +1,133 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Título da página</title>
-    <link rel="stylesheet" href="design.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação para Instituições de Caridade</title>
     <style>
-        .header {
-            font-size: 24px;
-            font-weight: bold;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e60009d3;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+             
+        }
+        header img {
+            max-width:100%
+         }
+         
+        section {
+            padding: 20px;
+        }
+        .charity {
             margin-bottom: 20px;
+            
+            align-items: center;
+            border: 1px solid #e60009d3;
+            border-radius: 30px; 
+            padding: 0px;
+            width: 100%;
+            cursor: pointer;
+            z-index: -2
+          }
+        .charity img {
+            max-width: 100%;
+            margin-bottom: 10px;
+            
+            text-align: center; /* Centraliza o texto */
+            z-index: -1
+          }
+        footer {
+             background-color: #333;
+             color: #ff9340;
+             text-align: center;
+             padding: 10px 0;
+             /*#ffe715*/
+       }
+        logo {
+            max-width: 5px;
+            font-size: 10px;
+            font-weight: bold;
+            color: #26ff00;
+            border-radius: 30px; 
+            }
+            charity h3 {
+            color: #333;
+        }
+        .charity p {
+            color: #666;
+        }
+        /* Altera a cor padrão dos links para vermelho */
+        a {
+            color: red;
+            text-decoration: none; /* Remove sublinhado padrão dos links */
+            display: block; /* Transforma o link em bloco para centralizá-lo */
+            text-align: center; /* Centraliza o texto */
+        }
+        /* Altera a cor dos links quando passar o mouse por cima */
+        a:hover {
+            color: darkred;
         }
 
-        .message {
-            font-size: 55px;
-            line-height: 1.6;
-            margin-top: 100px;
-        }
+
     </style>
 </head>
 <body>
-<div class="header">
-    <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
-    <ul class="menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="Agradecimento.html">Créditos</a></li>
-    </ul>
-</div>
-<div class="overlay">
-<div class="message">
-    <br>
-    <h1>Agradecimento </h1>
-    <p>Verdade seja dita aquele que verdadeiramente me permitiu estar aqui e Deus</p>
-    <br>
-    <p>não existem palavras pra mensurar o quão maravilhoso tem cido na minha vida sei o seu amor foi capaz de perdoar meus pecados, e mesmo sem eu existir tu me amaste, e mesmo eu tendo pecado você me amaste mesmo assim .</p>
-    <br>
-    <p>nem posso mais contar os livramentos que ja recebidos pela simples razão que ja merecia de me encontrado a morte a muito tempo, entretanto seu amor me fez estar aqui .</p>
-    <br>
-    <p>Você me deste este talento, me deu uma capacidade que não merecia, sei que minha inteligência não é minha ela pertence ao senhor, eu tenho conhecimento que um dia terei de prestar conta dos talentos que o senhor me concedeu, eu quero ser um servo fiel e multiplicar isto que recebi eu sinto muito medo de acabar entrando meu talento dai-me forças para que isso não ocorra</p>
-    <br>
-    <p>Sei que não sou merecedor de como o senhor tem sido bom pra mim, Senhor sei que não tenho cido forte o suficiente pra cumprir todos os teus projetos na minha vida, mais dai-me capacidade de fazer isso.</p>
-    <br>
-    <p>Te agradeço por ser quem Você É</p>
-    <br>
-    <h2>Todo o crédito seja dado ao único e verdadeiro Deus </h2>
-    <br>
-    <br>
-    <p>‭‭Salmos‬ ‭117:2‬ ‭</p>
-    <p>1. Louvem a Deus, o Senhor, todas as nações! Que todos os povos o louvem!</p>
-    <p>2. O seu amor por nós é forte, e a sua fidelidade dura para sempre. Aleluia!</p>
-</div>
-</div>
+    <header>
+         <a href="index.html"> <img src="icone(2).png" alt="Ícone"></a>
+        <h1>Doação para Instituições de Caridade</h1>
+        <p>Ajude a fazer a diferença no mundo conosco!</p>
+    </header>
+    
+    <section id="about">
+        <h2>Sobre Nossa Iniciativa de Doação</h2>
+          <p>Aqui na Seelig, acreditamos firmemente em contribuir para um mundo mais justo e solidário. Nosso compromisso com a responsabilidade social nos motiva a destinar parte de nossos recursos para apoiar causas humanitárias essenciais. Nossa iniciativa de doação abrange diversas áreas, com foco especial em alimentação para pessoas em situação de vulnerabilidade social, educação infantil e capacitação na área de tecnologia.</p>
+        <p>Nosso objetivo é combater a fome e promover a inclusão social por meio de ações concretas. Acreditamos que toda criança merece acesso à educação de qualidade e oportunidades de desenvolvimento, independentemente de sua condição socioeconômica. Além disso, reconhecemos a importância da capacitação profissional na área de tecnologia como um meio de empoderar indivíduos e impulsionar o crescimento econômico sustentável.</p>
+        <p>Ao fazer compras em nosso site, você não apenas adquire produtos de qualidade, mas também se torna parte de uma causa maior. Cada compra contribui para essas iniciativas de forma significativa, transformando vidas e fortalecendo comunidades. Junte-se a nós nessa missão de fazer o bem!</p>
+    </section>
+    
+    <section id="charities">
+        <h2>Instituições de Caridade Apoiadas</h2>
+        <div class="charity">
+          <br> <br>
+           <img src="https://aacd.org.br/wp-content/uploads/2019/10/logo-footer.jpg" alt="AACD - Associação de Assistência à Criança Deficiente">
+            <h3>AACD - Associação de Assistência à Criança Deficiente</h3>
+            <p>A AACD é uma instituição renomada que oferece tratamento especializado e reabilitação para pessoas com deficiência física. Contribuímos para seu trabalho crucial de inclusão e autonomia, fornecendo recursos para garantir acesso a cuidados de saúde de qualidade e suporte social.</p>
+            <a href="https://www.aacd.org.br/doar" target="_blank">Faça uma doação</a>
+        </div>
+        <div class="charity">
+           <br> <br>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwS7uCRKFf8yyXd1TGCGkD8bA5omKtdKV1A&usqp=CAU" alt="Instituto Ayrton Senna">
+            <h3>Instituto Ayrton Senna</h3>
+            <p>O Instituto Ayrton Senna dedica-se a melhorar a qualidade da educação pública no Brasil. Com nossas doações, apoiamos seu esforço em promover o desenvolvimento integral de crianças e jovens, implementando programas educacionais inovadores e capacitando educadores em todo o país.</p>
+            <a href="https://www.institutoayrtonsenna.org.br/doe" target="_blank">Faça uma doação</a>
+        </div>
+        <div class="charity">
+           <img src="https://www.greenpeace.org/brasil/wp-content/themes/planet4-master-theme/images/gp-logo.svg" alt="Greenpeace">
+            <h3>Greenpeace</h3>
+            <p>O Greenpeace é uma organização internacional que luta pela preservação do meio ambiente. Nossas doações ajudam a combater o desmatamento, as mudanças climáticas e a poluição em todo o mundo, apoiando campanhas de conscientização, defesa de áreas protegidas e promoção de fontes de energia limpa e renovável.</p>
+            <a href="https://www.greenpeace.org/brasil/doar" target="_blank">Faça uma doação</a>
+        </div>
+    </section>
+    
+    <section id="donate">
+        <h2>Faça uma Doação Direta</h2>
+        <p>Se você deseja contribuir diretamente para outras instituições de caridade, aqui estão alguns links para doação:</p>
+        <ul>
+            <li><a href="https://www.cruzvermelha.org.br/doar" target="_blank">Cruz Vermelha Brasileira</a></li>
+            <li><a href="https://www.msfindia.in/donate-now/" target="_blank">Médicos Sem Fronteiras</a></li>
+            <li><a href="https://www.savethechildren.org/" target="_blank">Save the Children</a></li>
+        </ul>
+    </section>
+    
+   <footer>
+        <p>&copy; 2023 Daniel Pereira. Todos os direitos reservados.</p>
+        <p><a href="#" id="admin-space-link">Espaço dos Administradores</a></p>
+    </footer>
 </body>
 </html>
