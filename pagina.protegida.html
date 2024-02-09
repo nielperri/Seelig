@@ -2,20 +2,20 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Carta de Amor</title>
+  <title>Carta</title>
   <style>
     /* Estilos CSS para a página */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
+      background-color: #ff2b4aa9
+      /*#f0f0f0*/
     }
 
     header {
       background-color: #333;
       color: white;
-      padding: 20px;
+      width: 100%;
+      padding: 200px;
       text-align: center;
     }
 
@@ -27,27 +27,34 @@
     }
 
     .envelope {
+    text-align: center;
       width: 900px;
       height: 600px;
       background-image: url("carta.jpeg"); /* Imagem do envelope fechado */
       background-size: cover;
       cursor: pointer;
+      transition: background-image 4s ease-in-out 1s;
+      /* Adicionado a posição de fundo ao envelope */
+ /* Adicionado a posição de fundo ao envelope */
+  background-position: center center;
     }
 
     .envelope.open {
       background-image: url("carta2.jpg"); /* Imagem do envelope aberto */
+      
+     
     }
 
     .paper {
-      width: 800px;
-      height: 2000px;
+      width: 1000px;
+      height: 2600px;
       background-color: white;
       position: relative;
       top: -300px;
-      left: 100px;
+      left: 50px;
       transform: rotate(-5deg);
       opacity: 0;
-      transition: all 4=""s ease-in-out;
+      transition: all 8s ease-in-out 1s;
     }
 
     .paper.show {
@@ -64,10 +71,10 @@
 
     .message {
       font-family: 'Sacramento', cursive; /* Fonte personalizada */
-      font-size: 62px;
+      font-size: 52px;
       color: black;
-      margin: 20px;
-      animation: handwriting 1#s steps(40) 1s 1 forwards; /* Efeito de animação */
+      margin: 0px;
+      animation: handwriting 1s steps(40) 1s 1 forwards; /* Efeito de animação */
     }
 
     /* Keyframes da animação */
@@ -83,21 +90,26 @@
 </head>
 <body>
   <header>
-    <h1>Carta de Amor</h1>
-    <img src="gisele.jpg" alt="Webcam Logitech C920 HD Pro" class="product-image">
+    <h1>Para a pessoa mais especialdo da minha vida</h1>
+    <img src="g.jpg" alt="foto carregando" class="product-image">
   </header>
   <main>
       
     <br><br>
     <div class="envelope">
       <div class="paper">
-        <p class="message">Meu amor,<br><br>
-          Você é a melhor coisa que já me aconteceu na vida. Eu te amo mais do que as palavras podem expressar. Você é a minha razão de viver, o meu sonho realizado, o meu tudo. Você me faz feliz como ninguém mais. Você me completa e me inspira a ser uma pessoa melhor a cada dia.<br><br>
-          Eu quero estar sempre ao seu lado, te apoiar, te proteger, te cuidar, te abraçar, te beijar, te fazer sorrir. Eu quero compartilhar com você todos os momentos, bons e ruins, alegres e tristes, simples e especiais. Eu quero construir com você uma história de amor linda e eterna.<br><br>
-          Você é o meu presente e o meu futuro. Você é o meu anjo e o meu tesouro. Você é o meu amor e o meu coração.<br><br>
-          Com amor,<br>
-          Seu namorado(a).
-        </p>
+        <p class="message">Minha melhor,<br><br>
+        Escrevo estas palavras com o coração cheio de gratidão e admiração por você. Desde o momento em que nos conhecemos, sua presença na minha vida tem sido uma bênção inestimável. Você é mais do que uma amiga; você é minha fonte constante de inspiração e força.<br><br>
+Admiro profundamente a maneira como você enfrenta os desafios da vida com graça e determinação. Sua coragem em seguir seus sonhos e sua capacidade de superar obstáculos são verdadeiramente inspiradoras para mim. <br><br>
+Cada vez que vejo você alcançando seus objetivos, sinto-me motivado a perseguir os meus com a mesma intensidade e paixão.Além disso, sua gentileza e compaixão não conhecem limites. <br><br>
+
+Mas o que mais me fascina em você, Gisele, é sua habilidade de fazer com que eu acredite em mim mesmo. 
+Quando estou ao falo com você,me sinto capaz de enfrentar qualquer desafio que a vida possa lançar em meu caminho.<br><br>
+ Sua confiança em mim é um presente precioso que valorizo mais do que palavras podem expressar.<br><br>
+Quero que saiba que estarei sempre aqui para você, em todos os momentos. 
+Seja para celebrar suas vitórias mais grandiosas ou para segurar sua mão nos momentos de dificuldade, estarei ao seu lado, apoiando e amando você incondicionalmente.<br><br>
+Gisele, você é verdadeiramente especial para mim, e sou eternamente grato por ter você em minha vida.<br><br>
+ Que possamos continuar a caminhar juntos, compartilhando nossos sonhos e construindo um futuro brilhante lado a lado.</p>
       </div>
     </div>
     
@@ -107,6 +119,9 @@
   <p>clique no envelope acima</p>
   <p>e abra sua mensagem!!!</p>
   <p>💌</p>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <audio id="music" src="lv.mp3" controls preload="auto" loop></audio>
+
  </div>
   <script>
     // Código JavaScript para a página
@@ -127,14 +142,17 @@
 
     // Função para tocar uma música de fundo
     function playMusic() {
+    
       // Criar um elemento de áudio
       let audio = document.createElement("audio");
       // Definir o atributo src com a URL da música
-      audio.setAttribute("src", "lugar.mp3");
+      audio.setAttribute("src", "lv.mp3");
       // Definir o atributo autoplay para tocar automaticamente
-      audio.setAttribute("autoplay", "true");
+      
+     
       // Adicionar o elemento de áudio ao body
       document.body.appendChild(audio);
+     music.play();
     }
   </script>
 </body>
