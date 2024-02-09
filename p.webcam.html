@@ -6,18 +6,30 @@
    <link rel="stylesheet" href="design.css">
 </head>
 <body>
+    <div class="border">
     <div class="header">
         <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
         <ul class="menu">
             <li><a href="index.html">Início</a></li>
+        
             <li><a href="contato.html">Contato</a></li>
             <li><a href="Agradecimento.html">Créditos</a></li>
         </ul>
         </div>
-     <div class="overlay">
+         <div class="overlay">
     <div class="container">
         <div class="product-details">
-            <img src="webcam.jpg" alt="Webcam Logitech C920 HD Pro" class="product-image">
+            <img src="webcam7.jpg" alt="Webcam Logitech C920 HD Pro" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="webcam7.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam7.jpg')">
+                <img src="webcam1.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam1.jpg')">
+                <img src="webcam3.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam3.jpg')">
+                <img src="webcam4.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam4.jpg')">
+                <img src="webcam5.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam5.jpg')">
+                <img src="webcam6.jpg" alt="Webcam Logitech C920 HD" onclick="changeImage('webcam6.jpg')">
+                
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
             <div class="product-info">
                 <h1 class="product-title">Webcam Logitech C920 HD Pro</h1>
                 <p class="product-price">R$ 399,00</p>
@@ -45,8 +57,8 @@
                 </div>
             </div>
         </div>
-    </div>
-              <div class="container">
+       
+                 <div class="container">
         <div class="product-details">
             <!-- Conteúdo da página principal -->
         </div>
@@ -58,9 +70,12 @@
             </div>
         </div>
     </div>
-
+</div>
     <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
 </body>
 </html>
-
-                 
