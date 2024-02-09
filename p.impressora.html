@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Detalhes do Produto</title>
-    <link rel="stylesheet" href="design.css">
+         <link rel="stylesheet" href="design.css">
 </head>
 <body>
     <div class="header">
         <div class="logo"><img src="icone(2).png" alt="Ícone"></div>
         <ul class="menu">
-           <li><a href="index.html">Início</a></li>
+            <li><a href="index.html">Início</a></li>
+            
             <li><a href="contato.html">Contato</a></li>
             <li><a href="Agradecimento.html">Créditos</a></li>
         </ul>
         </div>
-     <div class="overlay">
+         <div class="overlay">
     <div class="container">
         <div class="product-details">
-            <img src="impressora.jpg" alt="Impressora HP LaserJet Pro" class="product-image">
+             <img src="impressora1.jpg" alt="Impressora HP LaserJet Pro" class="product-image">
+            <div class="gallery" id="imageGallery">
+                <img src="impressora1.jpg" alt="Impressora HP LaserJet Pro " onclick="changeImage('impressora1.jpg')">
+               <img src="impressora2.jpg" alt="Impressora HP LaserJet Pro " onclick="changeImage('impressora2.jpg')">
+               <img src="impressora3.jpg" alt="Impressora HP LaserJet Pro " onclick="changeImage('impressora3.jpg')">
+               <img src="impressora4.jpg" alt="Impressora HP LaserJet Pro " onclick="changeImage('impressora4.jpg')">
+               <img src="impressora5.jpg" alt="Impressora HP LaserJet Pro " onclick="changeImage('impressora5.jpg')">
+                
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
             <div class="product-info">
                 <h1 class="product-title">Impressora HP LaserJet Pro</h1>
                 <p class="product-price">R$ 999,00</p>
              <div>
-               <a href="comprar.html" class="product-button">Comprar</a>
+               <a href="#" class="product-button">Comprar</a>
            </div>
                 <p class="product-description">
                   A Impressora HP LaserJet Pro é uma impressora a laser de alta qualidade projetada para atender às necessidades de impressão de escritórios e empresas. Ela oferece impressões rápidas e nítidas, além de recursos avançados para melhorar a eficiência do escritório.
@@ -48,8 +58,8 @@
                 </div>
             </div>
         </div>
-    </div>
-                  <div class="container">
+       
+                 <div class="container">
         <div class="product-details">
             <!-- Conteúdo da página principal -->
         </div>
@@ -63,5 +73,10 @@
     </div>
 
     <script src="relacionados.js"></script>
+    <script>
+        function changeImage(imagePath) {
+            document.querySelector('.product-image').src = imagePath;
+        }
+    </script>
 </body>
 </html>
