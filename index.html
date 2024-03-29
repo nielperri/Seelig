@@ -15,18 +15,43 @@
          .product-price { 
              text-decoration: underline;  color: var(--cor); 
          } 
-         
+          /* Estilo para tela inicial */
+        .initial-screen {
+            width: 100%;
+            height: 100vh;
+            background-color: var(--cor);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            cursor: mover;
+        }
+
+        .initial-screen img {
+            width: 100%;
+            max-width: 400px; /* Defina o tamanho máximo desejado */
+        }
          
       </style> 
   </head>  
   <body>  
       <div class="header">  
+          <body>
+    <div id="loading-screen" class="loading-screen">
+        <img src="icone(2).png" alt="Ícone Seelig" class="loading-icon"">
+    </div>
+    <!-- Restante do seu conteúdo HTML aqui -->
+       
           <div class="logo"><img src="icone(2).png" alt="Ícone"></div> 
           <ul class="menu">  
               <li><a href="index.html">Início</a></li>  
               <li><a href="contato.html">Contato</a></li>  
               <li><a href="Agradecimento.html">Doe</a></li>
-              <li><a href="app.html">App</a></li>
+              <li><a href="teste.html">App</a></li>
          
           </ul>  
       </div>  
@@ -297,6 +322,14 @@
                </div>  
               </div>
               </div>  
+              </div>
           </div>  
+   <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.getElementById("loading-screen").style.display = "none";
+    }, 3000); // 5000 milissegundos = 5 segundos
+});
+   </script>
               </bady>  
     </html>
