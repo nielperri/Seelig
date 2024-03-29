@@ -7,10 +7,34 @@
          #e60009d3
          */
         * { /* adicionado para fazer a página ocupar toda a tela */
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
             box-sizing: border-box;
         }
+       .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor); /* Tema desejado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Garante que o elemento de carregamento esteja na parte superior */
+}
+
+.loading-icon {
+    width: 100%; /* Ajuste conforme necessário */
+   /* Ajuste conforme necessário */
+}
+.loading-icon.animate-icon {
+    transition: transform 1s ease; /* Transição de 1 segundo com efeito de transição suave */
+}
+
+.loading-icon.animate-icon.animated {
+    transform: translateY(-100vh); /* Move o ícone para cima em 100% da altura da tela */
+}
          .gallery {
             display: flex;
             justify-content: space-between;
@@ -19,10 +43,12 @@
         }
 
         .gallery img {
-            width: 80px; /* Ajuste conforme necessário */
+            width: 15%; /* Ajuste conforme necessário */
             margin: 40px;
             cursor: pointer;
             border: 4px solid #e60009d3; 
+            border-radius: 10px;
+    border: 10px solid var(--cor);
         }
         
         .main-image {
@@ -30,11 +56,13 @@
         }
        
         body {
+            width: 100%;
             font-family: Arial, sans-serif;
             background-image: url('fundo.jpeg'); /* Define a imagem do céu como plano de fundo */
                background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
             background-repeat: no-repeat; /* Evita a repetição da imagem */
             background-attachment: fixed; /* Fixa a imagem para que ela role com o conteúdo */
+            
             margin: 0;
             padding: 0;
             
@@ -57,14 +85,15 @@
             align-items: center;
             justify-content: space;
             background-color: var(--cor);
-            padding: 10px;
+            padding: 3%;
         }
 
         .logo {
+            min-width: 1%;
             font-size: 10px;
             font-weight: bold;
             color: #26ff00;
-            border-radius: 30px; 
+            border-radius: 10px; 
             }
 
         .menu {
@@ -83,6 +112,7 @@
         }
 
         .content {
+       
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -105,6 +135,7 @@
         .product img {
             width: 150px;
             height: 150px;
+            
         }
 
         .product-info {
@@ -164,10 +195,12 @@
         }
 
         body {
+            width: 100%; 
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            
         }
 
         .container {
@@ -184,13 +217,15 @@
             flex-wrap: wrap;
         }
 
-        .product-image {
-            width: 100%;
+              .product-image {
+    margin: 10% 0% 1em;
+    width: 100%;
     height: auto;
     position: flex;
     top: 0;
     left: 0;
-    
+    border-radius: 20px;
+    border: 10px solid var(--cor);
         }
 
         .product-info {
@@ -212,7 +247,7 @@
         .product-description {
              color: black;
             font-size: 35px;
-            margin-bottom: 20px;
+            margin: 10% 0% 1em;
         }
 
         .product-specs {
