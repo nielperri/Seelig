@@ -136,6 +136,7 @@
             width: 150px;
             height: 150px;
             border-radius: 20px;
+            border: 1px solid var(--cor);
 
         }
 
